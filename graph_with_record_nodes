@@ -1,0 +1,14 @@
+digraph {
+	graph [rankdir=LR]
+	1748215879328 [label="{n1 | data 1.0000}" shape=record]
+	"1748215879328add" [label=add]
+	"1748215879328add" -> 1748215879328
+	1748215873712 [label="{n2 | data 2.0000}" shape=record]
+	1748218041152 [label="{root | data 4.0000}" shape=record]
+	"1748218041152multiply" [label=multiply]
+	"1748218041152multiply" -> 1748218041152
+	1748215430128 [label="{n3 | data 3.0000}" shape=record]
+	1748215430128 -> "1748215879328add"
+	1748215873712 -> "1748215879328add"
+	1748215879328 -> "1748218041152multiply"
+}
